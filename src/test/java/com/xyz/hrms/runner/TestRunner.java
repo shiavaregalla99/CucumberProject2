@@ -10,7 +10,13 @@ import io.cucumber.junit.CucumberOptions;
 ,monochrome=true,
 //dryRun=true,
 glue="com.xyz.hrms.Steps"
-,tags= {"@Smoke"}
+,tags= {"@Smoke"},
+plugin= {
+		"pretty",//prints gherkin steps in console
+		"html:target/cucumber-default-report",//create basic html report in specified location
+		"json:target/cucumber.json"
+		
+}
 )
 public class TestRunner {
 

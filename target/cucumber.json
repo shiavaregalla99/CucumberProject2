@@ -1,0 +1,86 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-19T16:47:48.621Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10194000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.xyz.hrms.Steps.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Login with invalid Credentials",
+        "description": "",
+        "id": "login-functionality-with-data-driven;login-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 932000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.xyz.hrms.Steps.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4402000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User enters invalid Usernmae and invalid password and see error message",
+            "match": {
+              "location": "com.xyz.hrms.Steps.LoginSteps.user_enters_invalid_Usernmae_and_invalid_password_and_see_error_message(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Username",
+                  "Password",
+                  "ErrorMessage"
+                ]
+              },
+              {
+                "cells": [
+                  "Admin",
+                  "Admin",
+                  "Invalid credentials"
+                ]
+              },
+              {
+                "cells": [
+                  "Admin12",
+                  "Admin123",
+                  "Invalid credentials"
+                ]
+              }
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality with data driven",
+    "description": "",
+    "id": "login-functionality-with-data-driven",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/loginDataDriven.feature",
+    "tags": []
+  }
+]
